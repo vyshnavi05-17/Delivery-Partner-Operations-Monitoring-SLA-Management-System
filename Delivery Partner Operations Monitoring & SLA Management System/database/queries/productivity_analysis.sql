@@ -1,0 +1,1 @@
+SELECT associate_id, COUNT(*) assigned_cases, SUM(CASE WHEN case_status IN ('Resolved','Closed') THEN 1 ELSE 0 END) resolved_cases, ROUND(AVG(resolution_minutes),1) avg_resolution_minutes FROM cases GROUP BY associate_id;

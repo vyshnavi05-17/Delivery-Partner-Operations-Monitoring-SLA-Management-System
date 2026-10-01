@@ -1,0 +1,1 @@
+-- Seed data is generated reproducibly by scripts/generate_data.py and loaded by scripts/load_database.py.

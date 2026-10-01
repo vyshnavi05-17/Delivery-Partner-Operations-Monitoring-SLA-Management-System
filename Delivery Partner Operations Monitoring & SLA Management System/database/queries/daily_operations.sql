@@ -1,0 +1,1 @@
+SELECT created_date, COUNT(*) total_cases, SUM(CASE WHEN case_status IN ('Resolved','Closed') THEN 1 ELSE 0 END) resolved_cases, SUM(CASE WHEN case_status NOT IN ('Resolved','Closed') THEN 1 ELSE 0 END) pending_cases FROM cases GROUP BY created_date ORDER BY created_date;

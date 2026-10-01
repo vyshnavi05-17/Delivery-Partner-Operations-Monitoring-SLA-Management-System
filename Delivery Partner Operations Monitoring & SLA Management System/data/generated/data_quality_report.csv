@@ -1,0 +1,8 @@
+check,issue_count,passed
+missing_required_values,0,True
+duplicate_case_ids,0,True
+invalid_status,0,True
+invalid_priority,0,True
+negative_resolution_time,0,True
+missing_associate,0,True
+missing_partner,0,True
